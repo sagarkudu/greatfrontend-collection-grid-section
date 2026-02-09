@@ -83,3 +83,59 @@ body {
   color: #000;
   font-weight: bold;
 }
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+   ========================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+  .container {
+    padding: 32px;
+  }
+
+  .grid-box {
+    gap: 16px;
+  }
+
+  h1 {
+    font-size: 1.3rem;
+  }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+  body {
+    height: auto;
+  }
+
+  .container {
+    padding: 20px;
+    height: auto;
+  }
+
+  .grid-box {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+
+  .tall {
+    grid-row: auto; /* removing forced tall card */
+  }
+
+  .card {
+    height: 220px; 
+  }
+
+  .overlay {
+    bottom: 16px;
+    left: 16px;
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 1.2rem;
+    margin-bottom: 16px;
+  }
+}
+
